@@ -15,9 +15,16 @@ public class BakeryRunner
         System.out.println("enter no of cake order ");
         Scanner mywish=new Scanner(System.in);
         n=mywish.nextInt();
-        for(int i=0;i<n;i++)
-            n.order();
-        System.out.println(n.toString());
+        Bakery[] bakeries = new Bakery[n];
+        for(int i=0;i<n;i++){
+            bakeries[0] = new Bakery();
+            bakeries[0].order();
+        }
+
+        for(int i=0;i<n;i++){
+            System.out.println(bakeries[0].toString());
+        }
+
 
     }
 }

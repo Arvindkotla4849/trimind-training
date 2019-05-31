@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Bakery
 {
     public String flavour;
-    public String weight;
+    public int weight;
     public int quantity;
     public double price;
 
-   // Bakery()
+   /* Bakery()
     {
         this.flavour="StrawBerry";
-        this.weight="1kg";
+        this.weight=1;
         this.quantity=1;
-    }//
-    Bakery(String flavour,String weight,int quantity)
+    }*/
+    Bakery()
     {
         this.flavour=flavour;
         this.weight=weight;
@@ -30,11 +30,11 @@ public class Bakery
         this.flavour = flavour;
     }
 
-    public String getWeight() {
+    public int getWeight() {
         return weight;
     }
 
-    public void setWeight(String weight) {
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 
@@ -74,9 +74,9 @@ public class Bakery
                 System.out.println("please choose correct option");
         }
         System.out.println("enter weight of cake(1kg,2kg,3kg):");
-        String n=mywish.next();
-        this.weight=n;
+        this.weight =king.nextInt();
         System.out.println("enter ordered quantity");
+        this.quantity =king.nextInt();
     }
 
 }

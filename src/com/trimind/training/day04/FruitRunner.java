@@ -1,6 +1,6 @@
 package com.trimind.training.day04;
 
-public class FruitRunner
+/*public class FruitRunner
 {
     public static void main(String[] args)
     {
@@ -23,4 +23,4 @@ public class FruitRunner
 
 
     }
-}
+}*/
